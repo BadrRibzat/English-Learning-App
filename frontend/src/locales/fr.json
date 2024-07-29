@@ -1,15 +1,51 @@
 {
   "language": "Langue",
   "footerText": "© 2024 Nom de Votre Application. Tous droits réservés.",
+  "about": {
+    "title": "À propos de nous",
+    "description": "Déverrouillez votre potentiel avec nos leçons et exercices interactifs.",
+    "features": {
+      "title": "Fonctionnalités",
+      "interactive": "Leçons interactives",
+      "progress": "Suivi des progrès",
+      "premium": "Contenu premium",
+      "multilingual": "Prise en charge multilingue"
+    }
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "name": "Nom",
+    "email": "Email",
+    "message": "Message",
+    "submit": "Soumettre"
+  },
+  "profile": "Profil",
+  "name": "Nom",
+  "email": "Email",
+  "progress": "Progrès",
+  "completed": "Terminé",
+  "inProgress": "En cours",
+  "score": "Score",
+  "welcomeToYourProfile": "Bienvenue sur votre profil",
+  "welcomeToRegister": "Bienvenue à l'inscription",
+  "noLessonsAvailable": "Aucune leçon disponible pour le moment.",
+  "lessons": "Leçons",
   "lessonTitle": "Leçon {number}",
-  "backToLessons": "Retour aux leçons",
-  "flashcards": "Cartes mémoire",
-  "typeAnswer": "Tapez votre réponse ici",
+  "lessonDescription": "Description de la leçon",
+  "startLesson": "Commencer la leçon",
+  "flashcards": "Fiches",
+  "typeAnswer": "Tapez votre réponse",
   "submit": "Soumettre",
   "correct": "Correct !",
-  "incorrect": "Incorrect. Essayez encore.",
+  "incorrect": "Incorrect",
   "tryAgain": "Essayer à nouveau",
-  "lessons": "Leçons",
-  "lessonDescription": "Description",
-  "startLesson": "Commencer la leçon"
+  "backToLessons": "Retour aux leçons",
+  "payNow": "Payer maintenant",
+  "cardNumber": "Numéro de carte",
+  "expiryDate": "Date d'expiration",
+  "cvv": "CVV",
+  "loadingLesson": "Chargement de la leçon...",
+  "loadingProfile": "Chargement du profil...",
+  "noProgressYet": "Pas encore de progrès. Commencez une leçon pour débuter !",
+  "errorFetchingLessons": "Erreur lors de la récupération des leçons. Veuillez réessayer."
 }

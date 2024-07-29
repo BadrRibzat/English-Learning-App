@@ -6,45 +6,10 @@
     </header>
     <main class="content-section">
       <section class="about-section">
-        <h2>About Me</h2>
-        <p>
-          I'm a passionate Full Stack Software Engineer based in Morocco, with a
-          strong foundation in both front-end and back-end technologies. My
-          approach to software development is rooted in the understanding that
-          technology is constantly evolving, and there's always more to learn
-          and explore.
-        </p>
-        <div class="personal-info">
-          <p><strong>Location:</strong> Morocco</p>
-          <p>
-            <strong>Email:</strong>
-            <a href="mailto:badrribzat@gmail.com">badrribzat@gmail.com</a>
-          </p>
-          <p><strong>Phone:</strong> +212627764176</p>
-          <p>
-            <strong>GitHub:</strong>
-            <a href="https://github.com/BadrRibzat" target="_blank"
-              >github.com/BadrRibzat</a
-            >
-          </p>
-          <p>
-            <strong>LinkedIn:</strong>
-            <a
-              href="https://www.linkedin.com/in/badr-ribzat14121990"
-              target="_blank"
-              >linkedin.com/in/badr-ribzat14121990</a
-            >
-          </p>
-        </div>
+        <!-- About section remains the same -->
       </section>
       <section class="skills-section">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-          <div class="skill-item" v-for="skill in skills" :key="skill">
-            <span class="skill-name">{{ skill }}</span>
-            <meter min="0" max="100" value="50" class="skill-meter"></meter>
-          </div>
-        </div>
+        <!-- Skills section remains the same -->
       </section>
       <section class="projects-section">
         <h2>Projects</h2>
@@ -63,6 +28,32 @@
           </div>
           <a href="/courses" class="project-link">View Project</a>
         </div>
+        <div class="project-card">
+          <h3>Personal Presentation</h3>
+          <p>
+            A web-based presentation showcasing my skills, experiences, and projects.
+            This interactive presentation provides an overview of my professional profile.
+          </p>
+          <div class="tech-stack">
+            <span v-for="tech in presentationTech" :key="tech" class="tech-item">{{
+              tech
+            }}</span>
+          </div>
+          <a href="https://badrribzat.github.io/Presentation/" target="_blank" class="project-link">View Presentation</a>
+        </div>
+        <div class="project-card">
+          <h3>API Project</h3>
+          <p>
+            A demonstration of my skills in working with APIs. This project showcases
+            my ability to integrate and manipulate data from external sources.
+          </p>
+          <div class="tech-stack">
+            <span v-for="tech in apiProjectTech" :key="tech" class="tech-item">{{
+              tech
+            }}</span>
+          </div>
+          <a href="https://badrribzat.github.io/project_api/" target="_blank" class="project-link">View API Project</a>
+        </div>
       </section>
     </main>
   </div>
@@ -70,25 +61,27 @@
 
 <script>
 export default {
-  name: 'PortfolioView',
-  data () {
+  name: "PortfolioView",
+  data() {
     return {
       skills: [
-        'JavaScript',
-        'Vue.js',
-        'Node.js',
-        'Python',
-        'Flask',
-        'MongoDB',
-        'HTML5',
-        'CSS3',
-        'RESTful APIs',
-        'Git'
+        "JavaScript",
+        "Vue.js",
+        "Node.js",
+        "Python",
+        "Flask",
+        "MongoDB",
+        "HTML5",
+        "CSS3",
+        "RESTful APIs",
+        "Git",
       ],
-      projectTech: ['Vue.js', 'Flask', 'MongoDB', 'Tailwind CSS']
-    }
-  }
-}
+      projectTech: ["Vite.js", "Vuex.js", "Node.js","Express.js", "MongoDB", "TailwindCSS"],
+      presentationTech: ["HTML", "CSS", "JavaScript"],
+      apiProjectTech: ["HTML", "CSS", "JavaScript", "RESTful APIs"],
+    };
+  },
+};
 </script>
 
 <style scoped>

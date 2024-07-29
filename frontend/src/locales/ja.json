@@ -1,15 +1,51 @@
 {
   "language": "言語",
   "footerText": "© 2024 あなたのアプリ名。すべての権利を保留します。",
+  "about": {
+    "title": "私たちについて",
+    "description": "私たちのインタラクティブなレッスンと演習であなたの可能性を解き放ちましょう。",
+    "features": {
+      "title": "特徴",
+      "interactive": "インタラクティブなレッスン",
+      "progress": "進捗追跡",
+      "premium": "プレミアムコンテンツ",
+      "multilingual": "多言語サポート"
+    }
+  },
+  "contact": {
+    "title": "お問い合わせ",
+    "name": "名前",
+    "email": "メール",
+    "message": "メッセージ",
+    "submit": "送信"
+  },
+  "profile": "プロフィール",
+  "name": "名前",
+  "email": "メール",
+  "progress": "進捗",
+  "completed": "完了",
+  "inProgress": "進行中",
+  "score": "スコア",
+  "welcomeToYourProfile": "あなたのプロフィールへようこそ",
+  "welcomeToRegister": "登録へようこそ",
+  "noLessonsAvailable": "現在利用可能なレッスンはありません。",
+  "lessons": "レッスン",
   "lessonTitle": "レッスン {number}",
-  "backToLessons": "レッスンに戻る",
+  "lessonDescription": "レッスンの説明",
+  "startLesson": "レッスンを開始",
   "flashcards": "フラッシュカード",
   "typeAnswer": "ここに回答を入力してください",
   "submit": "送信",
   "correct": "正解！",
   "incorrect": "不正解。もう一度試してください。",
   "tryAgain": "もう一度試す",
-  "lessons": "レッスン",
-  "lessonDescription": "説明",
-  "startLesson": "レッスンを開始"
+  "backToLessons": "レッスンに戻る",
+  "payNow": "今すぐ支払う",
+  "cardNumber": "カード番号",
+  "expiryDate": "有効期限",
+  "cvv": "CVV",
+  "loadingLesson": "レッスンを読み込んでいます...",
+  "loadingProfile": "プロフィールを読み込んでいます...",
+  "noProgressYet": "まだ進捗はありません。レッスンを始めましょう！",
+  "errorFetchingLessons": "レッスンの取得中にエラーが発生しました。もう一度お試しください。"
 }

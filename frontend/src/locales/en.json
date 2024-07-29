@@ -1,17 +1,51 @@
 {
-  "login": "Login",
-  "register": "Register",
-  "email": "Email",
-  "password": "Password",
+  "language": "Language",
+  "footerText": "© 2024 Your App Name. All rights reserved.",
+  "about": {
+    "title": "About Us",
+    "description": "Unlock your potential with our interactive lessons and exercises.",
+    "features": {
+      "title": "Features",
+      "interactive": "Interactive Lessons",
+      "progress": "Progress Tracking",
+      "premium": "Premium Content",
+      "multilingual": "Multilingual Support"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "submit": "Submit"
+  },
+  "profile": "Profile",
   "name": "Name",
+  "email": "Email",
+  "progress": "Progress",
+  "completed": "Completed",
+  "inProgress": "In Progress",
+  "score": "Score",
+  "welcomeToYourProfile": "Welcome to Your Profile",
+  "welcomeToRegister": "Welcome to Register",
+  "noLessonsAvailable": "No lessons available at the moment.",
   "lessons": "Lessons",
-  "noLessons": "No lessons available",
   "lessonTitle": "Lesson {number}",
+  "lessonDescription": "Lesson Description",
+  "startLesson": "Start Lesson",
   "flashcards": "Flashcards",
   "typeAnswer": "Type your answer",
   "submit": "Submit",
   "correct": "Correct!",
   "incorrect": "Incorrect",
   "tryAgain": "Try Again",
-  "backToLessons": "Back to Lessons"
+  "backToLessons": "Back to Lessons",
+  "payNow": "Pay Now",
+  "cardNumber": "Card Number",
+  "expiryDate": "Expiry Date",
+  "cvv": "CVV",
+  "loadingLesson": "Loading lesson...",
+  "loadingProfile": "Loading profile...",
+  "noProgressYet": "No progress yet. Start a lesson to begin!",
+  "errorFetchingLessons": "Error fetching lessons. Please try again."
 }

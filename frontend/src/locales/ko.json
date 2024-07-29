@@ -1,15 +1,51 @@
 {
   "language": "언어",
   "footerText": "© 2024 귀하의 앱 이름. 모든 권리 보유.",
+  "about": {
+    "title": "우리에 대해",
+    "description": "우리의 인터랙티브한 레슨과 연습을 통해 잠재력을 발휘하세요.",
+    "features": {
+      "title": "특징",
+      "interactive": "인터랙티브 레슨",
+      "progress": "진행 상황 추적",
+      "premium": "프리미엄 콘텐츠",
+      "multilingual": "다국어 지원"
+    }
+  },
+  "contact": {
+    "title": "문의하기",
+    "name": "이름",
+    "email": "이메일",
+    "message": "메시지",
+    "submit": "제출"
+  },
+  "profile": "프로필",
+  "name": "이름",
+  "email": "이메일",
+  "progress": "진행 상황",
+  "completed": "완료",
+  "inProgress": "진행 중",
+  "score": "점수",
+  "welcomeToYourProfile": "귀하의 프로필에 오신 것을 환영합니다",
+  "welcomeToRegister": "등록에 오신 것을 환영합니다",
+  "noLessonsAvailable": "현재 사용 가능한 레슨이 없습니다.",
+  "lessons": "수업",
   "lessonTitle": "수업 {number}",
-  "backToLessons": "수업으로 돌아가기",
+  "lessonDescription": "수업 설명",
+  "startLesson": "수업 시작",
   "flashcards": "플래시 카드",
   "typeAnswer": "여기에 답변을 입력하세요",
   "submit": "제출",
   "correct": "정답입니다!",
   "incorrect": "틀렸습니다. 다시 시도하세요.",
   "tryAgain": "다시 시도",
-  "lessons": "수업",
-  "lessonDescription": "설명",
-  "startLesson": "수업 시작"
+  "backToLessons": "수업으로 돌아가기",
+  "payNow": "지금 결제",
+  "cardNumber": "카드 번호",
+  "expiryDate": "유효 기간",
+  "cvv": "CVV",
+  "loadingLesson": "레슨을 불러오는 중...",
+  "loadingProfile": "프로필을 불러오는 중...",
+  "noProgressYet": "아직 진행 상황이 없습니다. 레슨을 시작하세요!",
+  "errorFetchingLessons": "레슨을 가져오는 중 오류가 발생했습니다. 다시 시도해 주세요."
 }

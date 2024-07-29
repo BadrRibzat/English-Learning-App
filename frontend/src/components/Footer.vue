@@ -1,34 +1,30 @@
 <template>
-  <footer class="app-footer">
+  <footer class="English-Learning-App-footer">
     <div class="language-selector">
       <label for="language-select">{{ $t('language') }}:</label>
       <select id="language-select" v-model="$i18n.locale">
         <option value="en">English</option>
         <option value="fr">Français</option>
         <option value="es">Español</option>
-        <option value="ch">中文</option>
-        <option value="ar">العربية</option>
-        <option value="ko">한국어</option>
-        <option value="ja">日本語</option>
+        <option value="ch">Chinese</option>
+        <option value="ar">Arabic</option>
+        <option value="ko">Korean</option>
+        <option value="ja">Japanese</option>
+        <!-- Add more language options as needed -->
       </select>
     </div>
     <p>{{ $t('footerText') }}</p>
-    <ChatbotPopup />
   </footer>
 </template>
 
 <script>
-import { useI18n } from 'vue-i18n';
-import ChatbotPopup from './ChatbotPopup.vue';
+import { useI18n } from 'vue-i18n'
 
 export default {
   name: 'Footer',
-  components: {
-    ChatbotPopup
-  },
-  setup() {
-    const { t } = useI18n();
-    return { t };
+  setup () {
+    const { t } = useI18n()
+    return { t }
   }
 }
 </script>
@@ -48,10 +44,5 @@ export default {
 select {
   margin-left: 0.5rem;
   padding: 0.25rem;
-}
-
-footer p {
-  margin: 0;
-  color: #333;
 }
 </style>

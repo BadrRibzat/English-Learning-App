@@ -1,15 +1,51 @@
 {
   "language": "لغة",
   "footerText": "© 2024 اسم تطبيقك. جميع الحقوق محفوظة.",
+  "about": {
+    "title": "معلومات عنا",
+    "description": "افتح إمكانياتك مع دروسنا وتماريننا التفاعلية.",
+    "features": {
+      "title": "الميزات",
+      "interactive": "دروس تفاعلية",
+      "progress": "تتبع التقدم",
+      "premium": "محتوى متميز",
+      "multilingual": "دعم متعدد اللغات"
+    }
+  },
+  "contact": {
+    "title": "اتصل بنا",
+    "name": "اسم",
+    "email": "البريد الإلكتروني",
+    "message": "رسالة",
+    "submit": "إرسال"
+  },
+  "profile": "الملف الشخصي",
+  "name": "اسم",
+  "email": "البريد الإلكتروني",
+  "progress": "التقدم",
+  "completed": "مكتمل",
+  "inProgress": "قيد التقدم",
+  "score": "النتيجة",
+  "welcomeToYourProfile": "مرحبًا بك في ملفك الشخصي",
+  "welcomeToRegister": "مرحبًا بك في التسجيل",
+  "noLessonsAvailable": "لا توجد دروس متاحة في الوقت الحالي.",
+  "lessons": "الدروس",
   "lessonTitle": "الدرس {number}",
-  "backToLessons": "العودة إلى الدروس",
+  "lessonDescription": "وصف الدرس",
+  "startLesson": "بدء الدرس",
   "flashcards": "بطاقات الذاكرة",
   "typeAnswer": "اكتب إجابتك هنا",
   "submit": "إرسال",
   "correct": "صحيح!",
   "incorrect": "خطأ. حاول مرة أخرى.",
   "tryAgain": "حاول مرة أخرى",
-  "lessons": "الدروس",
-  "lessonDescription": "الوصف",
-  "startLesson": "بدء الدرس"
+  "backToLessons": "العودة إلى الدروس",
+  "payNow": "ادفع الآن",
+  "cardNumber": "رقم البطاقة",
+  "expiryDate": "تاريخ الانتهاء",
+  "cvv": "CVV",
+  "loadingLesson": "جاري تحميل الدرس...",
+  "loadingProfile": "جاري تحميل الملف الشخصي...",
+  "noProgressYet": "لا يوجد تقدم بعد. ابدأ درسًا للبدء!",
+  "errorFetchingLessons": "خطأ في جلب الدروس. يرجى المحاولة مرة أخرى."
 }

@@ -10,10 +10,9 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 library.add(faPlay, faCreditCard, faCalendarAlt, faLock);
 
-axios.defaults.baseURL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000/api';
+axios.defaults.baseURL = 'http://localhost:5000/api';
 
-// Add axios interceptor for authentication
-axios.interceptors.request.use((config) => {
+axios.interceptors.request.use(config => {
   const token = localStorage.getItem('token');
   if (token) {
     config.headers.Authorization = `Bearer ${token}`;
@@ -27,4 +26,3 @@ app.use(router);
 app.use(store);
 app.use(i18n);
 app.mount('#app');
-

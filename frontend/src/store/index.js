@@ -11,8 +11,10 @@ export default createStore({
       state.token = token;
       if (token) {
         localStorage.setItem('token', token);
+        axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
       } else {
         localStorage.removeItem('token');
+        delete axios.defaults.headers.common['Authorization'];
       }
     },
     setUser(state, user) {
@@ -23,56 +25,39 @@ export default createStore({
         localStorage.removeItem('user');
       }
     },
-    updatePremiumAccess(state) {
-      if (state.user) {
-        state.user.hasPremiumAccess = true;
-        localStorage.setItem('user', JSON.stringify(state.user));
-      }
-    },
   },
   actions: {
-    async login({ commit, dispatch }, credentials) {
+    async login({ commit }, credentials) {
       try {
         const response = await axios.post('/auth/login', credentials);
         const { token, user } = response.data;
         commit('setToken', token);
         commit('setUser', user);
-        // After successful login, fetch additional user data if needed
-        await dispatch('fetchUserData');
         return user;
       } catch (error) {
-        console.error('Login failed:', error);
+        console.error('Login failed:', error.response?.data?.message || error.message);
         throw error;
       }
     },
-    async logout({ commit }) {
+    async register({ commit }, userData) {
+      try {
+        const response = await axios.post('/auth/register', userData);
+        const { token, user } = response.data;
+        commit('setToken', token);
+        commit('setUser', user);
+        return user;
+      } catch (error) {
+        console.error('Registration failed:', error.response?.data?.message || error.message);
+        throw error;
+      }
+    },
+    logout({ commit }) {
       commit('setToken', null);
       commit('setUser', null);
-    },
-    async updatePremiumAccess({ commit }) {
-      try {
-        await axios.post('/payments/update-premium-access');
-        commit('updatePremiumAccess');
-      } catch (error) {
-        console.error('Failed to update premium access:', error);
-        throw error;
-      }
-    },
-    async fetchUserData({ commit }) {
-      try {
-        const response = await axios.get('/auth/user');
-        commit('setUser', response.data);
-      } catch (error) {
-        console.error('Failed to fetch user data:', error);
-        commit('setUser', null);
-        commit('setToken', null);
-      }
     },
   },
   getters: {
     isAuthenticated: (state) => !!state.token,
     currentUser: (state) => state.user,
-    hasPremiumAccess: (state) => (state.user ? state.user.hasPremiumAccess : false),
   },
 });
-

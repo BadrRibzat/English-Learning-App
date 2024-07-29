@@ -1,8 +1,9 @@
+<!-- frontend/src/components/Header.vue -->
 <template>
   <header>
     <nav>
       <div class="logo">
-        <img src="@/assets/logo.png" alt="English Learning App" />
+        <img src="/src/assets/logo.png" alt="English Learning App" />
       </div>
       <ul>
         <li><router-link to="/">Home</router-link></li>
@@ -12,36 +13,37 @@
         <li v-if="!isAuthenticated"><router-link to="/register">Register</router-link></li>
         <li v-if="!isAuthenticated"><router-link to="/login">Login</router-link></li>
         <li v-if="isAuthenticated"><router-link to="/profile">Profile</router-link></li>
-        <li v-if="isAuthenticated"><a href="#" @click="logout">Logout</a></li>
-        <li v-if="!hasPremiumAccess"><router-link to="/payment">Upgrade to Premium</router-link></li>
-        <li><router-link to="/portfolio">Portfolio</router-link></li>
+        <li v-if="isAuthenticated"><a href="#" @click.prevent="logout">Logout</a></li>
+        <li v-if="!hasPremiumAccess"><router-link to="/payment">Premium</router-link></li>
+        <li><router-link to="/portfolio">Badr</router-link></li>
+        <li><router-link to="/khaoula">Khaoula</router-link></li>
       </ul>
     </nav>
   </header>
 </template>
 
 <script>
-import { computed } from 'vue'
-import { useStore } from 'vuex'
-import { useRouter } from 'vue-router'
+import { computed } from 'vue';
+import { useStore } from 'vuex';
+import { useRouter } from 'vue-router';
 
 export default {
   name: 'Header',
   setup() {
-    const store = useStore()
-    const router = useRouter()
+    const store = useStore();
+    const router = useRouter();
 
-    const isAuthenticated = computed(() => store.getters.isAuthenticated)
-    const hasPremiumAccess = computed(() => store.getters.hasPremiumAccess)
+    const isAuthenticated = computed(() => store.getters.isAuthenticated);
+    const hasPremiumAccess = computed(() => store.getters.hasPremiumAccess);
 
     const logout = () => {
-      store.dispatch('logout')
-      router.push('/login')
-    }
+      store.dispatch('logout');
+      router.push('/login');
+    };
 
-    return { isAuthenticated, hasPremiumAccess, logout }
-  }
-}
+    return { isAuthenticated, hasPremiumAccess, logout };
+  },
+};
 </script>
 
 <style scoped>
@@ -87,3 +89,4 @@ a.router-link-active {
   background-color: #007bff;
 }
 </style>
+

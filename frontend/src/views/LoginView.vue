@@ -14,7 +14,6 @@
 import { ref } from 'vue'
 import { useStore } from 'vuex'
 import { useRouter } from 'vue-router'
-import axios from 'axios'
 
 export default {
   name: 'LoginPage',
@@ -27,15 +26,14 @@ export default {
 
     const login = async () => {
       try {
-        const response = await axios.post('/auth/login', {
+        await store.dispatch('login', {
           email: email.value,
           password: password.value
         })
-        store.commit('setToken', response.data.token)
-        store.commit('setUser', response.data.user)
-        router.push('/profile')  // Changed from '/lessons' to '/profile'
+        router.push('/profile')
       } catch (err) {
-        error.value = err.response.data.message
+        console.error('Login error:', err);
+        error.value = err.response?.data?.message || 'Login failed. Please try again.';
       }
     }
 

@@ -1,15 +1,51 @@
 {
   "language": "Idioma",
   "footerText": "© 2024 Nombre de Su Aplicación. Todos los derechos reservados.",
+  "about": {
+    "title": "Acerca de nosotros",
+    "description": "Desbloquea tu potencial con nuestras lecciones y ejercicios interactivos.",
+    "features": {
+      "title": "Características",
+      "interactive": "Lecciones interactivas",
+      "progress": "Seguimiento del progreso",
+      "premium": "Contenido premium",
+      "multilingual": "Soporte multilingüe"
+    }
+  },
+  "contact": {
+    "title": "Contáctenos",
+    "name": "Nombre",
+    "email": "Email",
+    "message": "Mensaje",
+    "submit": "Enviar"
+  },
+  "profile": "Perfil",
+  "name": "Nombre",
+  "email": "Email",
+  "progress": "Progreso",
+  "completed": "Completado",
+  "inProgress": "En progreso",
+  "score": "Puntuación",
+  "welcomeToYourProfile": "Bienvenido a tu perfil",
+  "welcomeToRegister": "Bienvenido a registrarte",
+  "noLessonsAvailable": "No hay lecciones disponibles en este momento.",
+  "lessons": "Lecciones",
   "lessonTitle": "Lección {number}",
-  "backToLessons": "Volver a las lecciones",
+  "lessonDescription": "Descripción de la lección",
+  "startLesson": "Comenzar lección",
   "flashcards": "Tarjetas de memoria",
   "typeAnswer": "Escribe tu respuesta aquí",
   "submit": "Enviar",
   "correct": "¡Correcto!",
-  "incorrect": "Incorrecto. Inténtalo de nuevo.",
-  "tryAgain": "Intentar de nuevo",
-  "lessons": "Lecciones",
-  "lessonDescription": "Descripción",
-  "startLesson": "Comenzar lección"
+  "incorrect": "Incorrecto",
+  "tryAgain": "Intenta de nuevo",
+  "backToLessons": "Volver a las lecciones",
+  "payNow": "Pagar ahora",
+  "cardNumber": "Número de tarjeta",
+  "expiryDate": "Fecha de caducidad",
+  "cvv": "CVV",
+  "loadingLesson": "Cargando lección...",
+  "loadingProfile": "Cargando perfil...",
+  "noProgressYet": "Aún no hay progreso. ¡Comienza una lección para empezar!",
+  "errorFetchingLessons": "Error al obtener las lecciones. Por favor, inténtalo de nuevo."
 }

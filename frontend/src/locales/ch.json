@@ -1,15 +1,51 @@
 {
   "language": "语言",
   "footerText": "© 2024 您的应用名称。保留所有权利。",
+  "about": {
+    "title": "关于我们",
+    "description": "通过我们的互动课程和练习来解锁您的潜力。",
+    "features": {
+      "title": "特点",
+      "interactive": "互动课程",
+      "progress": "进度跟踪",
+      "premium": "高级内容",
+      "multilingual": "多语言支持"
+    }
+  },
+  "contact": {
+    "title": "联系我们",
+    "name": "姓名",
+    "email": "电子邮件",
+    "message": "消息",
+    "submit": "提交"
+  },
+  "profile": "个人资料",
+  "name": "姓名",
+  "email": "电子邮件",
+  "progress": "进度",
+  "completed": "完成",
+  "inProgress": "进行中",
+  "score": "分数",
+  "welcomeToYourProfile": "欢迎来到您的个人资料",
+  "welcomeToRegister": "欢迎注册",
+  "noLessonsAvailable": "目前没有可用的课程。",
+  "lessons": "课程",
   "lessonTitle": "课程 {number}",
-  "backToLessons": "返回课程",
+  "lessonDescription": "课程描述",
+  "startLesson": "开始课程",
   "flashcards": "抽认卡",
   "typeAnswer": "在此输入您的答案",
   "submit": "提交",
   "correct": "正确！",
   "incorrect": "错误。请再试一次。",
   "tryAgain": "再试一次",
-  "lessons": "课程",
-  "lessonDescription": "描述",
-  "startLesson": "开始课程"
+  "backToLessons": "返回课程",
+  "payNow": "立即付款",
+  "cardNumber": "卡号",
+  "expiryDate": "到期日期",
+  "cvv": "CVV",
+  "loadingLesson": "正在加载课程...",
+  "loadingProfile": "正在加载个人资料...",
+  "noProgressYet": "还没有进度。开始一个课程以开始！",
+  "errorFetchingLessons": "获取课程时出错。请重试。"
 }
